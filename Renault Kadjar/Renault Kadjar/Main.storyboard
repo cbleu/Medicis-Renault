@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Start page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Start page" id="BYZ-38-t0r" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="startpage_1024" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-4z-XeN">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-XF-fT7">
+                                <rect key="frame" x="112" y="612" width="51" height="31"/>
+                                <color key="onTintColor" red="0.76884075129999996" green="0.1756645956" blue="0.27458169570000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="649" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="switchPressedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="L9U-9F-BZQ"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVe-0Q-yv9">
+                                <rect key="frame" x="189" y="612" width="201" height="31"/>
+                                <state key="normal" title="Effacer la base de données" backgroundImage="button_erase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="649" width="201" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="deleteDataBase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHG-cy-4WM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eep-j9-fO6">
+                                <rect key="frame" x="96" y="520" width="294" height="40"/>
+                                <state key="normal" title="Envoyer la base par email" backgroundImage="bouton_normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="552" width="294" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="exportDatabase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFo-Fc-eYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVU-pB-WAc">
+                                <rect key="frame" x="469" y="389" width="256" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Démarrer le formulaire" backgroundImage="bouton_normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="495" y="405" width="256" height="55"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="GpT-YV-Ek1" kind="presentation" id="p9N-Uz-8cn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="buttonErase" destination="DVe-0Q-yv9" id="60x-O9-6FU"/>
+                        <outlet property="switchErase" destination="uMe-XF-fT7" id="YAV-Iv-qHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="-740"/>
+        </scene>
+        <!--Accueil client-->
+        <scene sceneID="P4X-RX-vzK">
+            <objects>
+                <viewController title="Accueil client" id="GpT-YV-Ek1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4f5-YK-UoY"/>
+                        <viewControllerLayoutGuide type="bottom" id="4BI-eO-5K5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oLT-sa-X8f">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Accueil_1024" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-JI-I7C">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-gm-AV0">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <gestureRecognizers/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="i9g-Zj-BsU" kind="presentation" id="VPg-Ot-RCw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzV-Kn-A2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="430"/>
+        </scene>
+        <!--Formulaire client-->
+        <scene sceneID="H7i-Ed-CYQ">
+            <objects>
+                <viewController title="Formulaire client" id="i9g-Zj-BsU" customClass="ClientForm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VfV-Es-20a"/>
+                        <viewControllerLayoutGuide type="bottom" id="THt-fU-bbS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZv-Pq-wNC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="formulaire_vide_1024" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-hb-IMQ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Prenom:" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-zh-5Wm">
+                                <rect key="frame" x="109" y="263" width="580" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="236" width="580" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Nom:" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fn5-Sx-Wew">
+                                <rect key="frame" x="109" y="314" width="580" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="183" width="580" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Adresse email:" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zVP-8a-Hrp">
+                                <rect key="frame" x="109" y="359" width="580" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="287" width="580" height="30"/>
+                                </variation>
+                            </textField>
+                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kQF-ig-1Rd">
+                                <rect key="frame" x="109" y="417" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="337" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="switchPressedAction:" destination="i9g-Zj-BsU" eventType="valueChanged" id="ON7-JB-HiY"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Je rejoins le Club Nestlé pour profiter de bons plans et gagner plein de cadeaux !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbS-ow-ZhK">
+                                <rect key="frame" x="168" y="422" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="354" y="342" width="600" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynu-9I-grF">
+                                <rect key="frame" x="271" y="477" width="334" height="65"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Je participe au tirage au sort." backgroundImage="bouton_normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="bouton_normal">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="bouton_press"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                    <rect key="frame" x="419" y="392" width="334" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveInfo:" destination="i9g-Zj-BsU" eventType="touchUpInside" id="wBJ-tK-QbV"/>
+                                    <segue destination="Y29-Lt-gZN" kind="custom" customClass="DismissSegue" id="HvE-5M-6QN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="buttonSend" destination="Ynu-9I-grF" id="0Cd-dH-J51"/>
+                        <outlet property="switchClub" destination="kQF-ig-1Rd" id="0Qs-zu-Sxp"/>
+                        <outlet property="txtEmail" destination="zVP-8a-Hrp" id="iT2-59-twI"/>
+                        <outlet property="txtFirstname" destination="DpO-zh-5Wm" id="avz-9j-YX5"/>
+                        <outlet property="txtLastname" destination="fn5-Sx-Wew" id="D9V-1U-TH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cS-hi-Xzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="1829"/>
+        </scene>
+        <!--Remerciements-->
+        <scene sceneID="4ie-lX-5r7">
+            <objects>
+                <viewController title="Remerciements" id="Y29-Lt-gZN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vw1-d3-W41"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xp-uX-DCV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMP-Yg-3SQ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="remerciements_1024" translatesAutoresizingMaskIntoConstraints="NO" id="0Xj-dp-YBa">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-he-weI">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="GpT-YV-Ek1" kind="custom" customClass="DismissSegue" id="hyP-FU-FD9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjN-ay-Uoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="3071"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Accueil_1024" width="1025" height="768"/>
+        <image name="bouton_normal" width="336" height="65"/>
+        <image name="bouton_press" width="336" height="65"/>
+        <image name="button_erase" width="336" height="65"/>
+        <image name="formulaire_vide_1024" width="1024" height="768"/>
+        <image name="remerciements_1024" width="1024" height="768"/>
+        <image name="startpage_1024" width="1024" height="768"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hyP-FU-FD9"/>
+    </inferredMetricsTieBreakers>
+</document>
