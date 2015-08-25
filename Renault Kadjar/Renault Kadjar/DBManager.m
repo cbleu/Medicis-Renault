@@ -90,7 +90,6 @@
     
     
 	// Open the database.
-//    BOOL openDatabaseResult = sqlite3_open_v2([databasePath UTF8String], &sqlite3Database, SQLITE_OPEN_READWRITE | SQLITE_OPEN_READWRITE, NULL);
     int openDatabaseResult = sqlite3_open([databasePath UTF8String], &sqlite3Database);
 	if(openDatabaseResult == SQLITE_OK) {
 		// Declare a sqlite3_stmt object in which will be stored the query after having been compiled into a SQLite statement.
@@ -99,7 +98,6 @@
         // Load all data from database to memory.
         int prepareStatementResult = sqlite3_prepare_v2(sqlite3Database, query, -1, &compiledStatement, NULL);
         if(prepareStatementResult == SQLITE_OK) {
-//        if(prepareStatementResult == YES) {
 			// Check if the query is non-executable.
 			if (!queryExecutable){
                 // In this case data must be loaded from the database.
@@ -145,7 +143,6 @@
 				// Execute the query.
                 int executeQueryResults = sqlite3_step(compiledStatement);
                 if (executeQueryResults == SQLITE_DONE) {
-//                if (executeQueryResults == YES) {
                     // Keep the affected rows.
                     self.affectedRows = sqlite3_changes(sqlite3Database);
                     
