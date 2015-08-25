@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBACD9D81A6EAA4D00F622FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBACD9D71A6EAA4D00F622FF /* main.m */; };
+		DBACD9DB1A6EAA4D00F622FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBACD9DA1A6EAA4D00F622FF /* AppDelegate.m */; };
+		DBACD9DE1A6EAA4D00F622FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBACD9DD1A6EAA4D00F622FF /* ViewController.m */; };
+		DBACD9E11A6EAA4D00F622FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBACD9DF1A6EAA4D00F622FF /* Main.storyboard */; };
+		DBACD9E31A6EAA4D00F622FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBACD9E21A6EAA4D00F622FF /* Images.xcassets */; };
+		DBACD9E61A6EAA4D00F622FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBACD9E41A6EAA4D00F622FF /* LaunchScreen.xib */; };
+		DBACD9F21A6EAA4D00F622FF /* RenaultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBACD9F11A6EAA4D00F622FF /* RenaultTests.m */; };
+		DBACD9FD1A6F0CA800F622FF /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DBACD9FC1A6F0CA800F622FF /* DismissSegue.m */; };
+		DBE55AC31A70EA78009757DE /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE55AC21A70EA78009757DE /* DBManager.m */; };
+		DBE55AC91A70EB1B009757DE /* clientInfoDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = DBE55AC81A70EB1B009757DE /* clientInfoDB.sql */; };
+		DBE55ACB1A70ECF7009757DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE55ACA1A70ECF7009757DE /* UIKit.framework */; };
+		DBE55ACD1A70ED02009757DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE55ACC1A70ED02009757DE /* Foundation.framework */; };
+		DBE55ACF1A70ED0F009757DE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE55ACE1A70ED0F009757DE /* libsqlite3.dylib */; };
+		DBE55AD21A70EF43009757DE /* ClientForm.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE55AD11A70EF43009757DE /* ClientForm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBACD9EC1A6EAA4D00F622FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBACD9CA1A6EAA4D00F622FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBACD9D11A6EAA4D00F622FF;
+			remoteInfo = "Medicis Renault";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBACD9D21A6EAA4D00F622FF /* Medicis Renault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medicis Renault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBACD9D61A6EAA4D00F622FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBACD9D71A6EAA4D00F622FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBACD9D91A6EAA4D00F622FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBACD9DA1A6EAA4D00F622FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBACD9DC1A6EAA4D00F622FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBACD9DD1A6EAA4D00F622FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBACD9E01A6EAA4D00F622FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBACD9E21A6EAA4D00F622FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBACD9E51A6EAA4D00F622FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DBACD9EB1A6EAA4D00F622FF /* Medicis RenaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medicis RenaultTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBACD9F01A6EAA4D00F622FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBACD9F11A6EAA4D00F622FF /* RenaultTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenaultTests.m; sourceTree = "<group>"; };
+		DBACD9FB1A6F0C6900F622FF /* DismissSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		DBACD9FC1A6F0CA800F622FF /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		DBE55AC11A70EA78009757DE /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		DBE55AC21A70EA78009757DE /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		DBE55AC81A70EB1B009757DE /* clientInfoDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = clientInfoDB.sql; sourceTree = "<group>"; };
+		DBE55ACA1A70ECF7009757DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBE55ACC1A70ED02009757DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBE55ACE1A70ED0F009757DE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DBE55AD01A70EF43009757DE /* ClientForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientForm.h; sourceTree = "<group>"; };
+		DBE55AD11A70EF43009757DE /* ClientForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientForm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBACD9CF1A6EAA4D00F622FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE55ACF1A70ED0F009757DE /* libsqlite3.dylib in Frameworks */,
+				DBE55ACD1A70ED02009757DE /* Foundation.framework in Frameworks */,
+				DBE55ACB1A70ECF7009757DE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBACD9E81A6EAA4D00F622FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBACD9C91A6EAA4D00F622FF = {
+			isa = PBXGroup;
+			children = (
+				DBACD9D41A6EAA4D00F622FF /* Renault */,
+				DBACD9EE1A6EAA4D00F622FF /* RenaultTests */,
+				DBACD9D31A6EAA4D00F622FF /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		DBACD9D31A6EAA4D00F622FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBACD9D21A6EAA4D00F622FF /* Medicis Renault.app */,
+				DBACD9EB1A6EAA4D00F622FF /* Medicis RenaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBACD9D41A6EAA4D00F622FF /* Renault */ = {
+			isa = PBXGroup;
+			children = (
+				DBE55AC81A70EB1B009757DE /* clientInfoDB.sql */,
+				DBE55AC11A70EA78009757DE /* DBManager.h */,
+				DBE55AC21A70EA78009757DE /* DBManager.m */,
+				DBACD9D91A6EAA4D00F622FF /* AppDelegate.h */,
+				DBACD9DA1A6EAA4D00F622FF /* AppDelegate.m */,
+				DBACD9DC1A6EAA4D00F622FF /* ViewController.h */,
+				DBACD9DD1A6EAA4D00F622FF /* ViewController.m */,
+				DBACD9FB1A6F0C6900F622FF /* DismissSegue.h */,
+				DBACD9FC1A6F0CA800F622FF /* DismissSegue.m */,
+				DBACD9DF1A6EAA4D00F622FF /* Main.storyboard */,
+				DBACD9E21A6EAA4D00F622FF /* Images.xcassets */,
+				DBACD9E41A6EAA4D00F622FF /* LaunchScreen.xib */,
+				DBACD9D51A6EAA4D00F622FF /* Supporting Files */,
+				DBE55AD01A70EF43009757DE /* ClientForm.h */,
+				DBE55AD11A70EF43009757DE /* ClientForm.m */,
+			);
+			path = Renault;
+			sourceTree = "<group>";
+		};
+		DBACD9D51A6EAA4D00F622FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBE55ACE1A70ED0F009757DE /* libsqlite3.dylib */,
+				DBE55ACC1A70ED02009757DE /* Foundation.framework */,
+				DBE55ACA1A70ECF7009757DE /* UIKit.framework */,
+				DBACD9D61A6EAA4D00F622FF /* Info.plist */,
+				DBACD9D71A6EAA4D00F622FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBACD9EE1A6EAA4D00F622FF /* RenaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBACD9F11A6EAA4D00F622FF /* RenaultTests.m */,
+				DBACD9EF1A6EAA4D00F622FF /* Supporting Files */,
+			);
+			path = RenaultTests;
+			sourceTree = "<group>";
+		};
+		DBACD9EF1A6EAA4D00F622FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBACD9F01A6EAA4D00F622FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBACD9D11A6EAA4D00F622FF /* Medicis Renault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBACD9F51A6EAA4D00F622FF /* Build configuration list for PBXNativeTarget "Medicis Renault" */;
+			buildPhases = (
+				DBACD9CE1A6EAA4D00F622FF /* Sources */,
+				DBACD9CF1A6EAA4D00F622FF /* Frameworks */,
+				DBACD9D01A6EAA4D00F622FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Medicis Renault";
+			productName = Renault;
+			productReference = DBACD9D21A6EAA4D00F622FF /* Medicis Renault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBACD9EA1A6EAA4D00F622FF /* Medicis RenaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBACD9F81A6EAA4D00F622FF /* Build configuration list for PBXNativeTarget "Medicis RenaultTests" */;
+			buildPhases = (
+				DBACD9E71A6EAA4D00F622FF /* Sources */,
+				DBACD9E81A6EAA4D00F622FF /* Frameworks */,
+				DBACD9E91A6EAA4D00F622FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBACD9ED1A6EAA4D00F622FF /* PBXTargetDependency */,
+			);
+			name = "Medicis RenaultTests";
+			productName = RenaultTests;
+			productReference = DBACD9EB1A6EAA4D00F622FF /* Medicis RenaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBACD9CA1A6EAA4D00F622FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "c-bleu";
+				TargetAttributes = {
+					DBACD9D11A6EAA4D00F622FF = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7XP7M76727;
+					};
+					DBACD9EA1A6EAA4D00F622FF = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DBACD9D11A6EAA4D00F622FF;
+					};
+				};
+			};
+			buildConfigurationList = DBACD9CD1A6EAA4D00F622FF /* Build configuration list for PBXProject "Medicis Renault" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBACD9C91A6EAA4D00F622FF;
+			productRefGroup = DBACD9D31A6EAA4D00F622FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBACD9D11A6EAA4D00F622FF /* Medicis Renault */,
+				DBACD9EA1A6EAA4D00F622FF /* Medicis RenaultTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBACD9D01A6EAA4D00F622FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBACD9E11A6EAA4D00F622FF /* Main.storyboard in Resources */,
+				DBACD9E61A6EAA4D00F622FF /* LaunchScreen.xib in Resources */,
+				DBACD9E31A6EAA4D00F622FF /* Images.xcassets in Resources */,
+				DBE55AC91A70EB1B009757DE /* clientInfoDB.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBACD9E91A6EAA4D00F622FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBACD9CE1A6EAA4D00F622FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBACD9DE1A6EAA4D00F622FF /* ViewController.m in Sources */,
+				DBACD9DB1A6EAA4D00F622FF /* AppDelegate.m in Sources */,
+				DBACD9FD1A6F0CA800F622FF /* DismissSegue.m in Sources */,
+				DBACD9D81A6EAA4D00F622FF /* main.m in Sources */,
+				DBE55AD21A70EF43009757DE /* ClientForm.m in Sources */,
+				DBE55AC31A70EA78009757DE /* DBManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBACD9E71A6EAA4D00F622FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBACD9F21A6EAA4D00F622FF /* RenaultTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBACD9ED1A6EAA4D00F622FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBACD9D11A6EAA4D00F622FF /* Medicis Renault */;
+			targetProxy = DBACD9EC1A6EAA4D00F622FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBACD9DF1A6EAA4D00F622FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBACD9E01A6EAA4D00F622FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBACD9E41A6EAA4D00F622FF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBACD9E51A6EAA4D00F622FF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBACD9F31A6EAA4D00F622FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBACD9F41A6EAA4D00F622FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBACD9F61A6EAA4D00F622FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Renault/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Medicis Renault";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DBACD9F71A6EAA4D00F622FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Renault/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Medicis Renault";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		DBACD9F91A6EAA4D00F622FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RenaultTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Medicis RenaultTests";
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Renault.app/Medicis Renault";
+			};
+			name = Debug;
+		};
+		DBACD9FA1A6EAA4D00F622FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RenaultTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Medicis RenaultTests";
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Renault.app/Medicis Renault";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBACD9CD1A6EAA4D00F622FF /* Build configuration list for PBXProject "Medicis Renault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBACD9F31A6EAA4D00F622FF /* Debug */,
+				DBACD9F41A6EAA4D00F622FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBACD9F51A6EAA4D00F622FF /* Build configuration list for PBXNativeTarget "Medicis Renault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBACD9F61A6EAA4D00F622FF /* Debug */,
+				DBACD9F71A6EAA4D00F622FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBACD9F81A6EAA4D00F622FF /* Build configuration list for PBXNativeTarget "Medicis RenaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBACD9F91A6EAA4D00F622FF /* Debug */,
+				DBACD9FA1A6EAA4D00F622FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBACD9CA1A6EAA4D00F622FF /* Project object */;
+}

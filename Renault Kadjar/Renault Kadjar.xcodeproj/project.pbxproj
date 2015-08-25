@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6A917F1B8B31660090052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A917E1B8B31660090052B /* main.m */; };
+		DB6A91821B8B31660090052B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A91811B8B31660090052B /* AppDelegate.m */; };
+		DB6A91851B8B31660090052B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A91841B8B31660090052B /* RootViewController.m */; };
+		DB6A91931B8B31660090052B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6A91911B8B31660090052B /* LaunchScreen.xib */; };
+		DB6A919F1B8B31660090052B /* Renault_KadjarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A919E1B8B31660090052B /* Renault_KadjarTests.m */; };
+		DB6A91AA1B8B383D0090052B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A91A91B8B383D0090052B /* DBManager.m */; };
+		DB6A91AD1B8B39000090052B /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6A91AC1B8B39000090052B /* DismissSegue.m */; };
+		DB6A91B01B8B39FB0090052B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6A91AE1B8B39FB0090052B /* Main.storyboard */; };
+		DB6A91B11B8B39FB0090052B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6A91AF1B8B39FB0090052B /* Images.xcassets */; };
+		DB6A91B31B8B3B3D0090052B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A91B21B8B3B3D0090052B /* libsqlite3.dylib */; };
+		DB6A91B51B8B3B4F0090052B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A91B41B8B3B4F0090052B /* Foundation.framework */; };
+		DB6A91B71B8B3B560090052B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A91B61B8B3B560090052B /* UIKit.framework */; };
+		DBEE8D8E1B8B9B2700CEA894 /* clientInfoDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = DBEE8D8D1B8B9B2700CEA894 /* clientInfoDB.sql */; };
+		DBEE8D911B8BA81800CEA894 /* ClientForm.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE8D901B8BA81800CEA894 /* ClientForm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6A91991B8B31660090052B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6A91711B8B31660090052B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6A91781B8B31660090052B;
+			remoteInfo = "Renault Kadjar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB6A91791B8B31660090052B /* Renault Kadjar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Renault Kadjar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6A917D1B8B31660090052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6A917E1B8B31660090052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB6A91801B8B31660090052B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB6A91811B8B31660090052B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB6A91831B8B31660090052B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DB6A91841B8B31660090052B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DB6A91921B8B31660090052B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DB6A91981B8B31660090052B /* Renault KadjarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Renault KadjarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6A919D1B8B31660090052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6A919E1B8B31660090052B /* Renault_KadjarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renault_KadjarTests.m; sourceTree = "<group>"; };
+		DB6A91A81B8B383D0090052B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		DB6A91A91B8B383D0090052B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		DB6A91AB1B8B39000090052B /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		DB6A91AC1B8B39000090052B /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		DB6A91AE1B8B39FB0090052B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DB6A91AF1B8B39FB0090052B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB6A91B21B8B3B3D0090052B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DB6A91B41B8B3B4F0090052B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB6A91B61B8B3B560090052B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBEE8D8D1B8B9B2700CEA894 /* clientInfoDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = clientInfoDB.sql; sourceTree = "<group>"; };
+		DBEE8D8F1B8BA81800CEA894 /* ClientForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientForm.h; sourceTree = "<group>"; };
+		DBEE8D901B8BA81800CEA894 /* ClientForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientForm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6A91761B8B31660090052B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A91B71B8B3B560090052B /* UIKit.framework in Frameworks */,
+				DB6A91B51B8B3B4F0090052B /* Foundation.framework in Frameworks */,
+				DB6A91B31B8B3B3D0090052B /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6A91951B8B31660090052B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6A91701B8B31660090052B = {
+			isa = PBXGroup;
+			children = (
+				DB6A917B1B8B31660090052B /* Renault Kadjar */,
+				DB6A919B1B8B31660090052B /* Renault KadjarTests */,
+				DB6A917A1B8B31660090052B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6A917A1B8B31660090052B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A91791B8B31660090052B /* Renault Kadjar.app */,
+				DB6A91981B8B31660090052B /* Renault KadjarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6A917B1B8B31660090052B /* Renault Kadjar */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE8D8F1B8BA81800CEA894 /* ClientForm.h */,
+				DBEE8D901B8BA81800CEA894 /* ClientForm.m */,
+				DBEE8D8D1B8B9B2700CEA894 /* clientInfoDB.sql */,
+				DB6A91A81B8B383D0090052B /* DBManager.h */,
+				DB6A91A91B8B383D0090052B /* DBManager.m */,
+				DB6A91801B8B31660090052B /* AppDelegate.h */,
+				DB6A91811B8B31660090052B /* AppDelegate.m */,
+				DB6A91831B8B31660090052B /* RootViewController.h */,
+				DB6A91841B8B31660090052B /* RootViewController.m */,
+				DB6A91AB1B8B39000090052B /* DismissSegue.h */,
+				DB6A91AC1B8B39000090052B /* DismissSegue.m */,
+				DB6A91AE1B8B39FB0090052B /* Main.storyboard */,
+				DB6A91AF1B8B39FB0090052B /* Images.xcassets */,
+				DB6A91911B8B31660090052B /* LaunchScreen.xib */,
+				DB6A917C1B8B31660090052B /* Supporting Files */,
+			);
+			path = "Renault Kadjar";
+			sourceTree = "<group>";
+		};
+		DB6A917C1B8B31660090052B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A91B21B8B3B3D0090052B /* libsqlite3.dylib */,
+				DB6A91B41B8B3B4F0090052B /* Foundation.framework */,
+				DB6A91B61B8B3B560090052B /* UIKit.framework */,
+				DB6A917D1B8B31660090052B /* Info.plist */,
+				DB6A917E1B8B31660090052B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB6A919B1B8B31660090052B /* Renault KadjarTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A919E1B8B31660090052B /* Renault_KadjarTests.m */,
+				DB6A919C1B8B31660090052B /* Supporting Files */,
+			);
+			path = "Renault KadjarTests";
+			sourceTree = "<group>";
+		};
+		DB6A919C1B8B31660090052B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A919D1B8B31660090052B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6A91781B8B31660090052B /* Renault Kadjar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6A91A21B8B31660090052B /* Build configuration list for PBXNativeTarget "Renault Kadjar" */;
+			buildPhases = (
+				DB6A91751B8B31660090052B /* Sources */,
+				DB6A91761B8B31660090052B /* Frameworks */,
+				DB6A91771B8B31660090052B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Renault Kadjar";
+			productName = "Renault Kadjar";
+			productReference = DB6A91791B8B31660090052B /* Renault Kadjar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB6A91971B8B31660090052B /* Renault KadjarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6A91A51B8B31660090052B /* Build configuration list for PBXNativeTarget "Renault KadjarTests" */;
+			buildPhases = (
+				DB6A91941B8B31660090052B /* Sources */,
+				DB6A91951B8B31660090052B /* Frameworks */,
+				DB6A91961B8B31660090052B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6A919A1B8B31660090052B /* PBXTargetDependency */,
+			);
+			name = "Renault KadjarTests";
+			productName = "Renault KadjarTests";
+			productReference = DB6A91981B8B31660090052B /* Renault KadjarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6A91711B8B31660090052B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "c-bleu";
+				TargetAttributes = {
+					DB6A91781B8B31660090052B = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7XP7M76727;
+					};
+					DB6A91971B8B31660090052B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DB6A91781B8B31660090052B;
+					};
+				};
+			};
+			buildConfigurationList = DB6A91741B8B31660090052B /* Build configuration list for PBXProject "Renault Kadjar" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6A91701B8B31660090052B;
+			productRefGroup = DB6A917A1B8B31660090052B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6A91781B8B31660090052B /* Renault Kadjar */,
+				DB6A91971B8B31660090052B /* Renault KadjarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6A91771B8B31660090052B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A91B11B8B39FB0090052B /* Images.xcassets in Resources */,
+				DBEE8D8E1B8B9B2700CEA894 /* clientInfoDB.sql in Resources */,
+				DB6A91931B8B31660090052B /* LaunchScreen.xib in Resources */,
+				DB6A91B01B8B39FB0090052B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6A91961B8B31660090052B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6A91751B8B31660090052B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A91AD1B8B39000090052B /* DismissSegue.m in Sources */,
+				DB6A91821B8B31660090052B /* AppDelegate.m in Sources */,
+				DB6A91AA1B8B383D0090052B /* DBManager.m in Sources */,
+				DB6A917F1B8B31660090052B /* main.m in Sources */,
+				DBEE8D911B8BA81800CEA894 /* ClientForm.m in Sources */,
+				DB6A91851B8B31660090052B /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6A91941B8B31660090052B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A919F1B8B31660090052B /* Renault_KadjarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6A919A1B8B31660090052B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6A91781B8B31660090052B /* Renault Kadjar */;
+			targetProxy = DB6A91991B8B31660090052B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB6A91911B8B31660090052B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6A91921B8B31660090052B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6A91A01B8B31660090052B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DB6A91A11B8B31660090052B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6A91A31B8B31660090052B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Renault Kadjar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB6A91A41B8B31660090052B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Renault Kadjar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB6A91A61B8B31660090052B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Renault KadjarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Renault Kadjar.app/Renault Kadjar";
+			};
+			name = Debug;
+		};
+		DB6A91A71B8B31660090052B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Renault KadjarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Renault Kadjar.app/Renault Kadjar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6A91741B8B31660090052B /* Build configuration list for PBXProject "Renault Kadjar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6A91A01B8B31660090052B /* Debug */,
+				DB6A91A11B8B31660090052B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6A91A21B8B31660090052B /* Build configuration list for PBXNativeTarget "Renault Kadjar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6A91A31B8B31660090052B /* Debug */,
+				DB6A91A41B8B31660090052B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6A91A51B8B31660090052B /* Build configuration list for PBXNativeTarget "Renault KadjarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6A91A61B8B31660090052B /* Debug */,
+				DB6A91A71B8B31660090052B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB6A91711B8B31660090052B /* Project object */;
+}
