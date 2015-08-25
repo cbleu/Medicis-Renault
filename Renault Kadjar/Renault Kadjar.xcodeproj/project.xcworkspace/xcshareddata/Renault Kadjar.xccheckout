@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5DCEF9B-79DF-4CEE-A779-3F1CC3F4FDFB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Renault Kadjar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DE18EC632CA4868BB159AADAC9B2331914B5D6CC</key>
+		<string>https://github.com/cbleu/Medicis-Renault.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Renault Kadjar/Renault Kadjar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DE18EC632CA4868BB159AADAC9B2331914B5D6CC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cbleu/Medicis-Renault.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DE18EC632CA4868BB159AADAC9B2331914B5D6CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE18EC632CA4868BB159AADAC9B2331914B5D6CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Medicis-Renault</string>
+		</dict>
+	</array>
+</dict>
+</plist>
